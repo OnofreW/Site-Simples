@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap'); 
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fontes/BebasNeue.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'idroid' ;
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src: url('../fontes/FoundationLogo-v0.3.ttf') format(opentype); font-weight: normal;
+}
+    
+
+:root {
+     --cor0:rgb(197, 235, 214);
+     --cor1:rgb(131, 225, 173);
+     --cor2:rgb(61, 220, 132);
+     --cor3:rgb(46, 159, 97);
+     --cor4:rgb(27, 116, 66);
+     --cor5:rgb(9, 56, 30);
+
+     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+     --fonte-destaque: 'Bebas Neue', Times; 
+     --font-android: 'idroid', Times;
+     --fonte-rodapé:'Foundation Logo',Times;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color:var(--cor0);
+    font-family:var(--fonte-padrao);
+}
+
+a.externo::after {
+    content:'\1F517';
+
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+main strong {
+color: var(--cor4);
+font-weight: bold;
+
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    border-radius: 20px;
+    background-color: rgb(143, 182, 153);
+    padding: 2px 6px;
+}
+    header {
+        background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+        min-height: 150px;
+        text-align: center;
+        
+}
+
+
+header > h1 {
+   
+    color: rgb(243, 162, 48);
+    font-family:var(--fonte-destaque);
+    padding-top: 0.5px;
+    margin-bottom: 0.5px;
+    font-size: 4em;
+    text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.837);
+}
+    
+header > p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em; 
+    max-width: 500px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin:auto;
+    text-shadow: 3px 4px 5px rgb(0, 0, 0);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 15.5px;
+    box-shadow: 0px 7px 7px rgba(27, 28, 28, 0.415);
+    
+}
+nav a {
+    color: rgb(247, 170, 36);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.7s;
+    text-align: center;
+   
+}
+
+nav a:hover {
+background-color:  rgba(255, 255, 255, 0.915);
+color: var(--cor5);
+}
+
+main {
+    
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px ;
+
+}
+    
+
+main h2 {
+    color:var(--cor5);
+    font-family:var(--font-android) ;
+}
+
+
+main h3 {
+    font-family:var(--font-android);
+    color:var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-indent: 5px;
+
+
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: rgb(4, 56, 36);
+    margin-bottom: 30px;
+    margin:0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 54%;
+    position: relative;
+}
+
+main iframe {
+   position: absolute;
+   top:5%;
+   left:5%;
+   width: 90%;
+   height: 90%;
+}
+
+aside {
+    background-color: rgba(185, 245, 222, 0.549);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.101);
+
+
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: rgb(5, 54, 35);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+aside > ul {
+    list-style-type: '\2714\00a0\00a0';
+    list-style-position: inside;
+    columns: 2;
+}
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 8px;
+    
+}
+footer a {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+footer  a:hover {
+    background-color: rgb(161, 246, 218);
+    color: var(--cor5);
+   
+
+}
+ 
+   
+    
+
+
+    
+
